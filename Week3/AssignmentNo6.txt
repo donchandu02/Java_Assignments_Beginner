@@ -1,0 +1,26 @@
+package MarchWeek3;
+
+abstract class My_Book{
+	abstract void setTitle();
+}
+
+class Book extends My_Book{
+
+	@Override
+	void setTitle() {
+		System.out.println("Knowledge in You..!!");
+		
+	}
+	
+	
+}
+public class Assignment_No6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book b = new Book();
+		b.setTitle();
+
+	}
+
+}

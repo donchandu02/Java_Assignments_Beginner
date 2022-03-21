@@ -1,0 +1,55 @@
+package MarchWeek3;
+class Dog {
+	String name = "Rufus";
+	
+	Dog(String name ){
+		this.name = name;
+	}
+	
+	public boolean isEquals() {
+		if(this.name == name) {
+			return true;
+		}
+		else {
+			return true;
+		}
+	}
+	void voice() {
+		System.out.println("woof..........!!!!!!!!!");
+	}
+}
+
+class Beagle extends Dog{
+	
+	Beagle(String name) {
+		super(name);
+		
+	}
+
+	void voice() {
+		super.voice();
+		System.out.println("arf arf..........!!!!!");
+		
+	}
+}
+public class Assinmentno3_4_5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Dog mouth = new Beagle("beuty");
+		mouth.voice();
+		Dog d1 = new Dog("Rufus");
+		Dog d2 = new Dog("Sally");
+		Dog d3 = new Dog("Rufus");
+		Dog d4 = new Dog("sally");
+		
+		System.out.println(d1.isEquals());
+		System.out.println(d2.isEquals());
+		System.out.println(d3.isEquals());
+		System.out.println(d4.isEquals());
+		
+		
+
+	}
+
+}
